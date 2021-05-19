@@ -1,0 +1,76 @@
+
+    
+    body { 
+    background:linear-gradient(45deg,#CCFFFF,#FFCCCC);
+  }.whole{
+    display:grid;
+}
+    
+h1{
+    text-align: center;
+    background-color:rgb(113, 35, 187,0.5);
+}
+h5{
+    text-align: center;
+    background-color:rgba(170, 135, 202, 0.5);
+}
+#title{
+    font-size:20px;
+    font-family:'Times New Roman', Times, serif;
+}
+.blair{
+    
+      
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+      border-color:black;
+      border-width: 3px;
+      border-style:solid;
+}
+#img-caption{
+    text-align:center;
+    color:purple;
+}
+.img-div{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items:center;
+}
+.d21{
+    background-color:blue;
+}
+.d22{
+    background-color:red;
+}
+.d23{
+    background-color:yellow;
+}
+.blair2{
+     max-width:100%;
+    
+ .space{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    line-height:35px;
+
+
+    list-style-position: inside;
+}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+     
+footer{
+    text-align: center;
+}
+
