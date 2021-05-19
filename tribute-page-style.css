@@ -1,6 +1,11 @@
-body {
+
+    
+    body { 
     background:linear-gradient(45deg,#CCFFFF,#FFCCCC);
-  }
+  }.whole{
+    display:grid;
+}
+    
 h1{
     text-align: center;
     background-color:rgb(113, 35, 187,0.5);
@@ -14,31 +19,41 @@ h5{
     font-family:'Times New Roman', Times, serif;
 }
 .blair{
+    
+      
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 100%;
       border-color:black;
-      border-width:3px;
+      border-width: 3px;
       border-style:solid;
 }
 #img-caption{
-    text-align: center;
+    text-align:center;
     color:purple;
 }
+.img-div{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items:center;
+}
+
 .blair2{
-    
-    position:relative;
-    left:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+     max-width:100%;
 }
- .space{
+.space{
     font-family:'Times New Roman', Times, serif;
-    text-align:center;
+    text-align : center;
     line-height:35px;
+    list-style-position:inside;
 
-
-    list-style-position: inside;
 }
-     
-
-
+       
+footer{
+    text-align: center;
+}
