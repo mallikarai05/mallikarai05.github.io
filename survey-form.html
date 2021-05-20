@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey-form.css">
+    <title>Survey-form</title>
+</head>
+<body>
+  <main>
+    <div class="whole">
+     <div class="a1">
+    <h1 id="title"><strong>How safe do you feel?</strong></h1>
+    <p class="desc"><em>“You can tell the condition of a Nation by looking at the status of its Women." </em>
+         Jawaharlal Nehru. When compared to the men still, most of the women are having fear of going
+        out due to the women harassment and it is going in
+        increasing manner. Let us know how safe as an individual you feel in your city. </p>
+        
+     </div>
+     <hr>
+     <div class="a2">
+        <form id="survey-form">
+         <div class="basic">
+               <div>
+                <p>Name: <label id="name-label" for="name">  <input id="name" type="text" placeholder="Enter your name."></label> </p>
+              </div>
+              <div>
+                <p>Email: <label id="email-label" for="email"> <input id="email"type="email" name="email" required placeholder="Enter a valid email address"></label></p>
+              </div>
+              <div>
+                <p>Age: <label id="number-label" for="number"> <input id="number" type="number" min="10" max="100" ></label></p>
+              </div>
+         </div>
+         
+        
+         <div class="info">
+            <div>
+             <p> State/Union Territory: <label id="state-label" for="state"> </label>
+                <select name="state" id="state">
+                    <option value="andhra">Andhra Pradesh</option>
+                    <option value="arunachal">Arunachal Pradesh</option>
+                    <option value="assam">Assam</option>
+                    <option value="bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="goa">Goa</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="himachal">Himachal Pradesh</option>
+                    <option value="jharkhand">Jharkhand</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="kerela">Kerela</option>
+                    <option value="mp">Madhya Pradesh<option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="manipur">Manipur</option>
+                    <option value="meghalaya">Meghalaya</option>
+                    <option value="mizoram">Mizoram</option>
+                    <option value="nagaland">Nagaland</option>
+                    <option value="odisha">Odisha</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="raj">Rajasthan</option>
+                    <option value="sikkim">Sikkim</option>
+                    <option value="tamilnadu">Tamil Nadu</option>
+                    <option value="telangana">Telangana</option>
+                    <option value="tripura">Tripura</option>
+                    <option value="uttarpradesh">Uttar Pradesh</option>
+                    <option value="uttarakhand">Uttarakhand</option>
+                    <option value="westbengal">West Bengal</option>
+                    
+                    <option value="andaman">Andaman and Nicobar island</option>
+                    <option value="chandigarh">Chandigarh</option>
+                    <option value="dadar"></option>Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="ladakh">Ladakh</option>
+                    <option value="lakshadeep">Lakshadeep</option>
+                    <option value="jammu">Jammu and Kashmir</option>
+                    <option value="puducherry">Puducherry</option>
+                </select>
+            </p>
+            </div>
+            <div>
+             <p>City: <label id="city-label" for="city"> <input id="city" type="text" placeholder="Enter your city." ></label></p>
+            </div>
+            <div>
+              <p>Pincode: <label id="pin-label" for="city"> <input id="pin" type="numbers" placeholder="Enter your pincode." ></label></p>
+             </div>
+         </div>
+      
+      </div>
+          <div class="a3">
+         <div class="c1"></div>
+         <div class="c2">
+    
+            <p>1. How long have you lived in your city? <br>
+                <label for="q1">
+                    <input id="q1" type="radio" name="ques1">Born and brought up <br>
+                    <input id="q1" type="radio" name="ques1">0-2 years <br>
+                    <input id="q1" type="radio" name="ques1">2-4 years <br>
+                    <input id="q1" type="radio" name="ques1">4-6 years <br>
+                    <input id="q1" type="radio" name="ques1">more than 6 years <br>
+                </label>
+                <br>
+            2. Where do you live?<br>
+                <label for="q2">
+                    <input id="q2" type="radio" name="ques2">Home<br>
+                    <input id="q2" type="radio" name="ques2">As a paying guest<br>
+                    <input id="q2" type="radio" name="ques2">Other<br>
+                </label>
+                <br>
+            3. Have you ever been sexually/physically harassed?(also includes eve teasing, cat-calling,inappropriate/derogatory words, being stalked/followed)<br>
+                <label for="q3">
+                    <input id="q3" type="radio" name="ques3">Yes<br>
+                    <input id="q3" type="radio" name="ques3">No<br>
+                </label>
+                <br>
+            4. If yes, did you report it?<br>
+                 <label for="q4">
+                    <input id="q4" type="radio" name="ques4">Yes<br>
+                    <input id="q4" type="radio" name="ques4">No<br>
+                </label>
+                <br>
+            5.If you did report it, did the autorities take appropriate action?<br>
+                <label for="q5">
+                    <input id="q5" type="radio" name="ques5">Yes<br>
+                    <input id="q5" type="radio" name="ques5">No<br>
+                </label>
+                <br>
+            6. If not, why did you not report it?<br>
+                <label for="q6">
+                    <input id="q6" type="text"><br>
+                </label>
+                <br>
+            7. Did you ever experience gender-based discrimination/judgement or misogynistic behaviour from your peers/family?<br>
+                <label for="q7">
+                    <input id="q7" type="radio" name="ques7">Yes<br>
+                    <input id="q7" type="radio" name="ques7">No<br>
+                </label>
+                <br>
+            8. If yes, could you describe the experience?<br>
+                <label for="q8">
+                    <input id="q8" type="text"><br>
+                </label>
+                <br>
+            9. On a scale of 1-10, how bad do you think the situation in your city is?
+               (0 being excellent and 10 being terrible.)<br>
+                <label for="q9"><br>
+                    0<input type="range" id="q9" min="0" max="10">10<br>
+                                                                    
+                </label>
+                <br>
+            10. What do you think should be done to improve the situation in your city?<br>
+                <label for="q10">
+                    <input id="q10" type="text"><br>
+                </label>
+                <br>
+            Select the few things you would suggest for safety purposes.<br>
+                <br>
+                <label for="check">
+                    <input id="check" type="checkbox" name="check" value="gps"> Turn GPS ON in case of unknown loactions.<br>
+                </label>
+                <label for="check">
+                    <input id="check" type="checkbox" name="check" value="pepper"> Carry a Pepper spray with you.<br>
+                </label>
+                <label for="check">
+                    <input id="check" type="checkbox" name="check" value="knife"> Carry a small knife with you.<br>
+                </label>
+                <label for="check">
+                    <input id="check" type="checkbox" name="check" value="torch"> Carry a mini flashlight with you.<br>
+                </label>
+                <label for="check">
+                    <input id="check" type="checkbox" name="check" value="rod"> Carry a safety rod with you.<br>
+                </label>
+                
+                <br>
+                <br>
+                To submit your responses click on Submit.    <button id="submit" type="submit">Submit</button>
+                 <br>
+                 <br>
+                 </p>
+                 <p style="text-align: center;"><em>Thank you for your time.</em></p>
+                
+            </div>
+    </div>
+   </div>
+
+    </form>
+</main>
+<footer><strong>Women Helpline ( All India ) -Women In Distress:1091  Women Helpline Domestic Abuse:181  National Commison For Women (NCW):011-26942369, 26944754</strong></footer>
+</body>
+</html>
