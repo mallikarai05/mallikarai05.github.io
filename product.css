@@ -1,0 +1,19 @@
+.a1{
+    background:linear-gradient(45deg,#CCFFFF,#FFCCCC);
+    display:grid;
+    grid-template-columns:30% 70%;
+}
+.a12{ 
+    justify-items: center;
+    background-color: red;
+    display:grid;
+    grid-template-columns:20% 20% 20% 20%;
+}
+.a11{
+    background-color: yellow;
+}
+#header-img{
+    width:40%;
+}
+  
+
