@@ -176,6 +176,10 @@ footer{
         align-self: center;
         text-align:center;
     }
+    .video1{
+        width:100%;
+    }
+
 
 
 }
@@ -223,4 +227,8 @@ footer{
         text-align:center;
         
     }
+    .video1{
+        width:100%;
+    }
+
 }
