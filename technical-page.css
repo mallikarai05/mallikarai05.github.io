@@ -55,22 +55,21 @@ footer{
     color:white;
     text-align: center;
     grid-area: ft;
+    padding-bottom:1.2em;
 }
 a{
     text-decoration: none;
     color:black;
     font-size:1em;
 }
-a:hover{
-    color:white;
-}
+
 
 .link:hover{
     background-color:rgba(1, 0, 29, 0.953);
     border-color:white;
       border-width: 1px;
      border-style:solid;
-     
+     color:white;
      font-weight:bold;
 }
 .link{
@@ -117,13 +116,14 @@ code{ width:80%;
 
     }
     .text{
-        width:90%;
+        width:100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
       
        
     }
+   
 }
 
    
