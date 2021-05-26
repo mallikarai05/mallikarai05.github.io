@@ -38,9 +38,9 @@ aside{
     top:0;
     text-align: center;
     border-color:black;
-      border-width: 3px;*/
+      border-width: 3px;
      border-style:solid;
-     border: solid black;
+     border: solid black;*/
     flex-basis: content;
 }
 
@@ -67,7 +67,7 @@ a{
 .link:hover{
     background-color:rgba(1, 0, 29, 0.953);
     border-color:white;
-      border-width: 1px;
+     border-width: 0.5px;
      border-style:solid;
      color:white;
      font-weight:bold;
@@ -77,9 +77,9 @@ a{
     flex:auto;
     text-align:center;
     padding:0.7rem;
-    border-color:black;
+    /*border-color:black;
       border-width: 1px;
-     border-style:solid;
+     border-style:solid;*/
 }
 code{ width:80%;
     background-color: rgba(255, 255, 255, 0.515);
