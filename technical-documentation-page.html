@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="technical-page.css">
+    <title>Technical Ducumentation Page</title>
+</head>
+<body>
+    <header>
+        <h2>Basic CSS</h2><p><em>Cascading Style Sheets</em></p>
+    </header>
+    <aside> 
+        
+            <div class="link" a href="#intro">Introduction</a></div>
+            <div class="link" a href="#syntax">CSS Syntax</a></div>
+            <div class="link" a href="#comment">CSS Comment</a></div>
+            <div class="link" a href="#colors">CSS Colors</a></div>
+            <div class="link" a href="#heightw">CSS Height and Width</a></div>
+            <div class="link" a href="#background">CSS Backgrounds</a></div>
+            <div class="link" a href="#CSS fonts">CSS fonts</a></div>
+            <div class="link" a href="#border">CSS Border</a></div>
+            <div class="link" a href="#padding">CSS Padding</a></div>
+            <div class="link" a href="#margin">CSS margin</a></div>
+            <div class="link" a href="#abrel">Understand Absolute versus Relative Units</a></div>
+
+    
+        
+    </aside>
+    <main id="main-doc">
+        <br>
+        <br>
+        <br>
+        <div class="dec">
+            <img  class="dec-img" src="https://cdn.lynda.com/course/5038219/5038219-637514184557920747-16x9.jpg" alt="">
+        <br>
+        <br>
+        <br>
+        </div>
+        <div class="text">
+            <section class=main-section>
+                <h3 id="intro">Introduction</h3>
+                <p>
+                    CSS is the language we use to style a Web page.
+                    CSS stands for Cascading Style Sheets
+                    CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                    CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                    External stylesheets are stored in CSS files.
+                    CSS is used to define styles for your web pages, 
+                    including the design, layout and variations in display for different devices and screen sizes.
+                    <h4> CSS Saves a Lot of Work!</h4>
+                    The style definitions are normally saved in external .css files.
+                    With an external stylesheet file, you can change the look of an entire website by changing just one file! 
+                </p>
+            </section>
+            <section class="main-section">
+                <h3 id="syntax">CSS Syntax</h3>
+                <p>
+                    A CSS rule consists of a selector and a declaration block.
+                    <br>
+                    <br>
+                    <br>
+                    <img class="dec-img" src="https://www.w3schools.com/css/img_selector.gif">
+                    <br>
+                    <br>
+                    The selector points to the HTML element you want to style.
+                    The declaration block contains one or more declarations separated by semicolons.
+                    Each declaration includes a CSS property name and a value, separated by a colon.
+                    Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly brac
+                </p>
+            </section>
+            <section class="main-section">
+                <h3 id="comment">CSS Comment</h3>
+                <p>
+                   Comments are used to explain the code, and may help when you edit the source code at a later date.
+                    Comments are ignored by browsers.
+                    A CSS comment is placed inside the &lt;style&gt; element, and starts with /* and ends with */
+                </p>
+            </section>
+            <section class="main-section">
+                <h3 id="colors">CSS colors</h3>
+                <p>
+                    Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+                </p>
+                <h4>Change the color of text</h4>
+                <p>
+                    Now let's change the color of some of our text. 
+                    We can do this by changing the style of your h2 element. 
+                    The property that is responsible for the color of an element's text is the color style property. 
+                    Here's how you would set your h2 element's text color to blue: 
+                    <div class="example">
+                        <code>
+                        &lt;h2 style="color: blue;"&gt;Cool Heading&lt;/h2&gt;
+                        </code>
+                    </div>
+                </p>
+                <h4>Use Hex Code for Specific Colors</h4>
+                <p>
+                    Did you know there are other ways to recodesent colors in CSS? One of these ways is called hexadecimal code, or hex code for short.
+                    We usually use decimals, or base 10 numbers, which use the symbols 0 to 9 for each digit. Hexadecimals (or hex) are base 16 numbers. This means it uses sixteen distinct symbols. Like decimals, the symbols 0-9 recodesent the values zero to nine. Then A,B,C,D,E,F recodesent the values ten to fifteen. Altogether, 0 to F can recodesent a digit in hexadecimal, giving us 16 total possible values. You can find more information about hexadecimal numbers here.
+                    In CSS, we can use 6 hexadecimal digits to recodesent colors, two each for the red (R), green (G), and blue (B) components. For example, #000000 is black and is also the lowest possible value. You can find more information about the RGB color system here.
+                    <div class="example">
+                      
+                            <code>
+                             body { 
+                                color: #000000; 
+                                  }
+                            </code>
+                           
+                    </div>
+                </p>
+                <h4>Use Hex Code to Mix Colors</h4>
+                <p>
+                    To review, hex codes use 6 hexadecimal digits to recodesent colors, two each for red (R), green (G), and blue (B) components.
+                    From these three pure colors (red, green, and blue), we can vary the amounts of each to create over 16 million other colors!
+                    For example, orange is pure red, mixed with some green, and no blue. In hex code, this translates to being #FFA500.
+                    The digit 0 is the lowest number in hex code, and recodesents a complete absence of color.
+                    The digit F is the highest number in hex code, and recodesents the maximum possible brightness.
+                </p>
+                <h4>Use Abbreviated Hex Code</h4>
+                <p>
+                    Many people feel overwhelmed by the possibilities of more than 16 million colors. And it's difficult to remember hex code. Fortunately, you can shorten it.
+                    For example, red's hex code #FF0000 can be shortened to #F00. This shortened form gives one digit for red, one digit for green, and one digit for blue.
+                    This reduces the total number of possible colors to around 4,000. But browsers will intercodet #FF0000 and #F00 as exactly the same color.
+                    <table>
+                        <tr>
+                            <td><strong>Color</strong></td>
+                            <td><strong>Short Hex Code</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Cyan</td>
+                            <td>#0FF</td>
+                        </tr>
+                        <tr>
+                            <td>Green</td>
+                            <td>#0F0</td>
+                        </tr>
+                        <tr>
+                            <td>Red</td>
+                            <td>#F00</td>
+                        </tr>
+                        <tr>
+                            <td>Fuchsia</td>
+                            <td>#F0F</td>
+                        </tr>
+                    </table>
+                </p>
+                <h4>Use RGB values to Color Elements</h4>
+                <p>
+                    Another way you can recodesent colors in CSS is by using RGB values.
+                    The RGB value for black looks like this:
+                    <div class="example">
+                        <code>
+                            rgb(0, 0, 0)
+                        </code>
+                    </div>
+                    The RGB value for white looks like this:
+                    <div class="example">
+                        <code>
+                            rgb(255, 255, 255)
+                        </code>
+                    </div>
+                    Instead of using six hexadecimal digits like you do with hex code, with RGB you specify the brightness of each color with a number between 0 and 255.
+                    If you do the math, the two digits for one color equal 16 times 16, which gives us 256 total values. So RGB, which starts counting from zero, has the exact same number of possible values as hex code.
+                </p>
+                <h4>Use RGB to Mix Colors</h4>
+                <p>
+                    Just like with hex code, you can mix colors in RGB by using combinations of different values.
+                    <table>
+                        <tr>
+                            <td><strong>Color</strong></td>
+                            <td><strong>RGB</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Blue</td>
+                            <td>rgb(0, 0, 255)</td>
+                        </tr>
+                        <tr>
+                            <td>Orchid</td>
+                            <td>rgb(218, 112, 214)</td>
+                        </tr>
+                        <tr>
+                            <td>Red</td>
+                            <td>rgb(255, 0, 0)</td>
+                        </tr>
+                        <tr>
+                            <td>Sienna</td>
+                            <td>rgb(160, 82, 45)</td>
+                        </tr>
+                    </table>
+                </p>
+            </section>
+            <section class="main-section">
+                <h3 id="heightw">CSS Height and Width</h3>
+                <p>
+                    The CSS height and width properties are used to set the height and width of an element.
+                    The CSS max-width property is used to set the maximum width of an element.
+                </p>
+                <h4>CSS Setting height and width</h4>
+                <p>
+                    The height and width properties are used to set the height and width of an element.
+                    The height and width properties do not include padding, borders, or margins.
+                    It sets the height/width of the area inside the padding, border, and margin of the element.
+                </p>
+                <h4>CSS height and width Values</h4>
+                <p>
+                    The height and width properties may have the following values:
+                    <ul>
+                        <li>auto - This is default. The browser calculates the height and width</li>
+                        <li>length - Defines the height/width in px, cm etc.</li>
+                        <li>% - Defines the height/width in percent of the containing block</li>
+                        <li>initial - Sets the height/width to its default value</li>
+                        <li>inherit - The height/width will be inherited from its parent value</li>
+                    </ul>
+                </p>
+                <h4>CSS height and width Examples</h4>
+                <p>Set the height and width of a &lt;div&gt; element:</p>
+                    <div class="example">
+                        <code>
+                            div {
+                                height: 200px;
+                                width: 50%;
+                                background-color: powderblue;
+                              }
+                        </code>
+                    </div>
+                <p>Set the height and width of another &lt;div&gt; element:</p>
+                    <div class="example">
+                        <code>
+                            div {
+                                height: 100px;
+                                width: 500px;
+                                background-color: powderblue;
+                              }
+                        </code>
+                    </div>
+                <p>
+                    Note: Remember that the height and width properties do not include padding, borders, or margins! 
+                    They set the height/width of the area inside the padding, border, and margin of the element!
+                </p>
+                <h4>Setting max-width</h4>
+                <p>
+                    The max-width property is used to set the maximum width of an element.
+                    The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).
+                    The problem with the &lt;div&gt; above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
+                    Using max-width instead, in this situation, will improve the browser's handling of small windows.
+                    <br>
+                    Tip: Drag the browser window to smaller than 500px wide, to see the difference between the two divs!
+                    <br>
+                    Note: If you for some reason use both the width property and the max-width property on the same element,
+                    and the value of the width property is larger than the max-width property; the max-width property will be used (and the width property will be ignored).
+                    <br>
+                    This &lt;div&gt; element has a height of 100 pixels and a max-width of 500 pixels: 
+                    <div class="example">
+                        <code>
+                            div {
+                                max-width: 500px;
+                                height: 100px;
+                                background-color: powderblue;
+                              }
+                        </code>
+                    </div>
+                </p>
+            </section>
+            <section class="main-section">
+                <h3 id="background">CSS Backgrounds</h3>
+                <p>
+                    The CSS background properties are used to add background effects for elements.
+                    In this section, we will cover the following CSS background properties:
+                    <ul>
+                        <li>background-color</li>
+                        <li>background-image</li>
+                        <li>background-repeat</li>
+                        <li>background-attachment</li>
+                    </ul>
+                </p>
+                <h3>CSS background-color</h3>
+                <p>
+                    The background-color property specifies the background color of an element.
+                    The background color of a page is set like this:
+                    <div class="example">
+                        <code>
+                            body {
+                                background-color: lightblue;
+                              }
+                        </code>
+                    </div>
+                    With CSS, a color is most often specified by:
+                    <ul>
+                        <li>a valid color name - like "red"</li>
+                        <li>a HEX value - like "#ff0000"</li>
+                        <li>an RGB value - like "rgb(255,0,0)"</li>
+                    </ul>
+                </p>
+                <h4>CSS background-image</h4>
+                <p>
+                    The background-image property specifies an image to use as the background of an element.
+                    By default, the image is repeated so it covers the entire element.
+                    The background-image property specifies an image to use as the background of an element.
+                    By default, the image is repeated so it covers the entire element.
+                    <div class="example">
+                        <code>
+                            body {
+                                background-image: url("paper.gif");
+                              }
+                        </code>
+                    </div>
+                </p>
+                <h4>CSS background-repeat</h4>
+                <p>
+                    By default, the background-image property repeats an image both horizontally and vertically.
+                    Some images should be repeated only horizontally or vertically, or they will look strange, like this:
+                    <div class="example">
+                        <code>
+                            body {
+                                background-image: url("gradient_bg.png");
+                              }
+                        </code>
+                    </div>
+                    If the image above is repeated only horizontally (background-repeat: repeat-x;),
+                    the background will look better:
+                    <br>
+                    <br>
+                    <div class="example">
+                        <code>
+                            body {
+                                background-image: url("gradient_bg.png");
+                                background-repeat: repeat-x;
+                              }
+                        </code>
+                    </div>
+                    Tip: To repeat an image vertically, set background-repeat: repeat-y;
+                </p>
+                <h4>CSS background-attachment</h4>
+                <p>
+                    The background-attachment property specifies whether the background image should scroll or be fixed 
+                    (will not scroll with the rest of the page):
+                    Specify that the background image should be fixed:
+                    <div class="example">
+                        <code>
+                            body {
+                                background-image: url("img_tree.png");
+                                background-repeat: no-repeat;
+                                background-position: right top;
+                                background-attachment: fixed;
+                              }
+                        </code>
+                    </div>
+                </p>
+            </section>
+            <section class="main-section">
+                <h3 id="CSS fonts">CSS fonts</h3>
+                    <h4>Font Selection is Important</h4>
+                    <p>
+                        Choosing the right font has a huge impact on how the readers experience a website.
+                        The right font can create a strong identity for your brand.
+                        Using a font that is easy to read is important. The font adds value to your text.
+                        It is also important to choose the correct color and text size for the font.
+                    </p>
+                    <h4>Generic Font Families</h4>
+                    <p>In CSS there are five generic font families:
+                        <ol>
+                            <li>Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.</li>
+                            <li>Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.</li>
+                            <li>Monospace fonts - here all the letters have the same fixed width. They create a mechanical look.</li> 
+                            <li>Cursive fonts imitate human handwriting.</li>
+                            <li>Fantasy fonts are decorative/playful fonts.</li>
+                        </ol>
+                    </p>
+                    <h4>Change the Font Size of an Element </h4>
+                    <p>
+                        Font size is controlled by the font-size CSS property, like this: 
+                        <div class="example">
+                            <code>
+                                h1 {
+                                    font-size: 30px; 
+                               } 
+                            </code>
+                        </div>
+                    </p>
+                    <h4>Set the Font Family of an Element </h4>
+                    <p>
+                        You can set which font an element should use, by using the font-family property. 
+                        For example, if you wanted to set your h2 element's font to sans-serif, you would use the following CSS: 
+                        <div class="example">
+                            <code>
+                                h2 { 
+                                    font-family: sans-serif; 
+                                  }
+                            </code>
+                        </div>
+                    </p>
+                    <h4>Import a Google Font </h4>
+                    <p>
+                        In addition to specifying common fonts that are found on most operating systems,
+                        we can also specify non-standard, custom web fonts for use on our website.
+                        There are many sources for web fonts on the Internet. For this example we will focus on the Google Fonts library. 
+                        Google Fonts is a free library of web fonts that you can use in your CSS by referencing the font's URL. 
+                        So, let's go ahead and import and apply a Google font (note that if Google is blocked in your country,
+                        you will need to skip this challenge). 
+                        To import a Google Font, you can copy the font's URL from the Google Fonts library and then paste it in your HTML.
+                        For this challenge, we'll import the Lobster font. To do this, copy the following code snippet and paste it into the top of your code editor (before the opening style element): 
+                        <br>
+                        <br>
+                        <div class="example">
+                            <code>
+                                &lt;link href="https://fonts.googleapis.com/css?family=Lobster"
+                                 rel="stylesheet" type="text/css"&gt;
+                            </code>
+                        </div>
+                        <br>
+                        Now you can use the Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following example:
+                        <div class="example">
+                            <code>
+                                font-family: FAMILY_NAME, GENERIC_NAME;
+                            </code>
+                        </div>
+                        The GENERIC_NAME is optional, and is a fallback font in case the other specified font is not available.
+                        This is covered in the next challenge. 
+                        Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name.
+                        For example, you need quotes to use the "Open Sans" font, but not to use the Lobster font. 
+                    </p>
+                    <h4>Specify How Fonts Should Degrade </h4>
+                    <p>
+                        There are several default fonts that are available in all browsers. These generic font families include monospace, serif and sans-serif 
+                        When one font isn't available, you can tell the browser to "degrade" to another font. 
+                        For example, if you wanted an element to use the Helvetica font, but degrade to the sans-serif font when Helvetica isn't available, you will specify it as follows: 
+                        <div class="example">
+                            <code>
+                                p { 
+                                    font-family: Helvetica, sans-serif; 
+                                  }
+                            </code>
+                        </div>
+                        Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords. 
+                    </p>
+                    <section class="main-section">
+                        <h3 id="border">CSS Border</h3>
+                        <h4>Add borders around your elements</h4>
+                        <p>
+                            CSS borders have properties like style, color and width.
+                            For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:
+                            <div class="example">
+                                <code>
+                                    &lt;style&gt;
+                                        .thin-red-border {
+                                          border-color: red;
+                                          border-width: 5px;
+                                          border-style: solid;
+                                        }
+                                      &lt;/style&gt;
+                                </code>
+                            </div>
+                        </p>
+                        <h4>Add rounded corners with border-radius</h4>
+                        <p>
+                            Your cat photo currently has sharp corners.
+                            We can round out those corners with a CSS property called border-radius.
+                        </p>
+                        <h4>Make Circular Images with a border-radius</h4>
+                        <p>
+                            In addition to pixels, you can also specify the border-radius using a percentage.
+                        </p>
+                    </section>
+                    <section class="main-section">
+                        <h3 id="padding">CSS Padding</h3>
+                        <p>
+                            You may have already noticed this, but all HTML elements are essentially little rectangles.
+                            Three important properties control the space that surrounds each HTML element: padding, border, and margin.
+                            An element's padding controls the amount of space between the element's content and its border
+                        </p>
+                        <h4>Add Different Padding to Each Side of an Element</h4>
+                        <p>
+                            Sometimes you will want to customize an element so that it has different amounts of padding on each of its sides.
+                            CSS allows you to control the padding of all four individual sides of an element with the padding-top, padding-right, padding-bottom, and padding-left properties.
+                        </p>
+                        <h4>Use Clockwise Notation to Specify the Padding of an Element</h4>
+                        <p>
+                            Instead of specifying an element's padding-top, padding-right, padding-bottom, and padding-left properties individually, you can specify them all in one line, like this:
+                            <div class="example">
+                                <code>
+                                    padding: 10px 20px 10px 20px;
+                                </code>
+                            </div>
+                            These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.
+                        </p>
+                    </section>
+                    <section class="main-section">
+                        <h3 id="margin">CSS margin</h3>
+                        <p>
+                            An element's margin controls the amount of space between an element's border and surrounding elements.
+                        </p>
+                        <h4>Add a Negative Margin to an Element</h4>
+                        <p>
+                            An element's margin controls the amount of space between an element's border and surrounding elements.
+                            If you set an element's margin to a negative value, the element will grow larger.
+                        </p>
+                        <h4>Add Different Margins to Each Side of an Element</h4>
+                        <p>
+                            Sometimes you will want to customize an element so that it has a different margin on each of its sides.
+                            CSS allows you to control the margin of all four individual sides of an element with the margin-top, margin-right, margin-bottom, and margin-left properties.
+                        </p>
+                        <h4>Use Clockwise Notation to Specify the Margin of an Element</h4>
+                        <p>
+                            Let's try this again, but with margin this time.
+                            Instead of specifying an element's margin-top, margin-right, margin-bottom, and margin-left properties individually, you can specify them all in one line, like this:
+                            <div class="example">
+                                <code>
+                                    margin: 10px 20px 10px 20px;
+                                </code>
+                            </div>
+                            These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
+                        </p>
+                    </section>
+                    <section class="main-section">
+                        <h3 id="abrel">Understand Absolute versus Relative Units</h3>
+                        <p>
+                            The last several challenges all set an element's margin or padding with pixels (px). Pixels are a type of length unit, which is what tells the browser how to size or space an item. In addition to px, CSS has a number of different length unit options that you can use.
+                            The two main types of length units are absolute and relative. Absolute units tie to physical units of length. For example, in and mm refer to inches and millimeters, respectively. Absolute length units approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.
+                            Relative units, such as em or rem, are relative to another length value. For example, em is based on the size of an element's font. If you use it to set the font-size property itself, it's relative to the parent's font-size.
+                            <br>
+                            Note: There are several relative unit options that are tied to the size of the viewport. They are covered in the Responsive Web Design Principles section.
+                        </p>
+                    </section>
+        </div>
+        
+    </main>
+    <footer>
+        <h4><em>For more details visit:</em></h4>
+        <a href="https://www.w3schools.com/css/default.asp" style="color:white;" > CSS HOME</a>
+    </footer>
+</body>
+</html>

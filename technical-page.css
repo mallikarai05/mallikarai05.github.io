@@ -1,0 +1,122 @@
+.example{
+    color:red;
+}
+.dec-img{
+    width:70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background: rgba(193, 192, 255, 0.611);
+    display:grid;
+    grid-template-columns:22% auto;
+    /*grid-template-rows: 60px 700px auto 20px;*/
+    grid-template-rows: 1.5% 7% auto 1.2%;
+    grid-column-gap: 1.5%;
+    grid-row-gap:2em;
+    grid-template-areas:"hd hd"
+                        "sidebar main"
+                        ". main"
+                        "ft ft";
+
+}
+header{
+    background: rgba(2, 1, 39, 0.919);
+    color:white;
+    grid-area: hd;
+    text-align: center;
+}
+aside{
+    background: rgba(112, 133, 218, 0.494);
+    grid-area: sidebar;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    /*z-index:1;
+    top:0;
+    text-align: center;
+    border-color:black;
+      border-width: 3px;*/
+     border-style:solid;
+     border: solid black;
+    flex-basis: content;
+}
+
+main{
+    background:rgba(111, 116, 243, 0.487);
+    grid-area:main;
+    padding:1em;
+
+}
+footer{
+    background: rgba(2, 1, 39, 0.919);
+    color:white;
+    text-align: center;
+    grid-area: ft;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size:1em;
+}
+
+.link:hover{
+    background-color:rgba(1, 0, 29, 0.953);
+    border-color:white;
+      border-width: 1px;
+     border-style:solid;
+     color:white;
+     font-weight:bold;
+}
+.link{
+    cursor:pointer;
+    flex:auto;
+    text-align:center;
+    padding:0.7rem;
+    border-color:black;
+      border-width: 1px;
+     border-style:solid;
+}
+code{ width:80%;
+    background-color: rgba(255, 255, 255, 0.515);
+    color:rgba(2, 1, 39, 0.919);
+    padding:1em;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+.text{
+    width:90%;
+    margin-left:2em;
+   
+}
+@media all and (max-width:768px){
+    body{
+        display:flex;
+        flex-direction:column;
+    }
+    .dec-img{
+        width:100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    code{ width:90%;
+        padding-top:1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text{
+        width:90%;
+      
+       
+    }
+}
+
+   
