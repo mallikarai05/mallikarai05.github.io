@@ -1,0 +1,57 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    color:white;
+    background-color:rgb(65, 1, 1);
+    display:grid;
+    grid-template-columns:20% auto 20%;
+    grid-template-rows:15vh 75vh 10vh;
+    grid-template-areas:"hd hd hd"
+                        ". frm ."
+                        ". btn .";
+
+}
+#message{
+    height:20vh;
+    
+}
+form{
+    grid-area:frm;
+    background-color:rgba(26, 0, 0, 0.659);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+h1{
+    text-align: center;
+    grid-area:hd;
+}
+.bttn{
+    grid-area:btn;
+    text-align: center;
+    margin: 1.5rem;
+}
+button{
+    background-color:beige;
+    height: 5vh;
+    width:10vw;
+    font-weight: bold;
+    
+}
+button:hover{
+   
+    background-color:black;
+    border-color:white;
+     border-width: 0.5px;
+     font-weight:bold;
+     border-style:solid;
+     color:white;
+}
+@media all and (max-width:480px){
+    h1{
+        font-size:6vmin;
+    }
+   button{
+       width:40%;
+   }
+}

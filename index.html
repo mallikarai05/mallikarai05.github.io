@@ -6,36 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mallika Rai | Portfolio </title>
     <link rel="stylesheet" href="portfolio.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Qwigley&family=Source+Sans+Pro:wght@200;400&family=Varela&display=swap" rel="stylesheet">       
 <body>
     <header>
-        <h1>Mallika Rai</h1>
-        <nav>
-            <ul>
-                <li>Projects</li>
-                <li>Resume</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <div class="name"><h1>Mallika Rai</h1></div>
+        
+            <nav>
+                <ul>
+                      <li class="info" onclick="location.href='#projects';" >Projects</li>
+                      <li class="info" onclick="location.href='https://drive.google.com/file/d/1moaWuAjSdw6KFXPekbucqYgqD-E3Mggc/view?usp=sharing';">Resume</li>
+                      <li class="info" onclick="location.href='message.html';">Contact</li>
+                </ul>
+            </nav>
+        
     </header>
     <main>
-        <div>
-            <img src="img1622129933947.jpg">
+        <div class="intro">
+            <div class="myimg1">
+                <img class="myimg" src="img1622129933947.jpg">
+            </div>
+            <div class="intro1">
+                <h2 style="font-family: 'Pattaya', sans-serif;">About Me</h2>
+                <p>
+                    Hey! <br>I'm Mallika Rai, currently in my 2nd year of engineering in Computer Science from Mody University of Science and Technology,Sikar.
+                    I am able to handle multiple tasks on a daily basis and have a creative approach towards problem solving.Very strong organizational,
+                    presentational,and communicationa skills to help plan out and pitch different web user interface styles.
+                </p>
+            </div>
         </div>
-        <div>
+        <br>
+        <div class="projects" id="projects">
+            <div class="link">
+                <br>
+                <a href="tribute_page.html">
+                    <img src="tribute1.png" class="proj">
+                    <h3>Tribute Page</h3>
+                </a>
+            </div>
+            <div class="link">
+                <br>
+                <a href="survey-form.html">
+                    <img src="form.png" class="proj">
+                    <h3>Survey Form</h3>
+                </a>
+            </div>
+            <div class="link">
+                <br>
+                <a href="product-landing-page.html">
+                    <img src="product.png" class="proj">
+                    <h3>Product Landing Page</h3>
+                </a>
+            </div>
+            <div class="link">
+                <br>
+                <a href="technical-documentation-page.html">
+                    <img src="technical.png" class="proj">
+                    <h3>Technical Documentation Page</h3>
+                </a>
+            </div>
         </div>
-        <h2>About Me</h2>
-        <p>
-            Hey! <br>I'm Mallika Rai.<br>I am currently in my 2nd year of engineering in Computer Science from Mody University of Science and Technology,Sikar.
-            Able to handle multiple tasks on a daily basis and have a creative approach towards problem solving.Very strong organizational,
-            presentational,and communicationa skills to help plan out and pitch different web user interface styles.
-
-
-
-        </p>
-        </div>
-
-        
     </main>
+    <footer>
+        <div class="f1">
+            <h1 style="font-family: 'Kanit', sans-serif;">Let's work together...</h1>
+            <h3><em>How do you take your coffee?</em></h3>
+            <br>
+            
+        </div>
+       <br>
+        <div class="ref">
+            <div class="reff">
+                <a href="https://github.com/mallikarai05">
+                    <i class="fa fa-github" style="font-size:36px;color:white;"><p style="font-size: 1rem;">GitHub</p></i>
+                </a>
+            </div>
+            <div class="reff">
+                <a href="https://www.linkedin.com/in/mallika-rai-87959a1a7/">
+                    <i class="fa fa-linkedin-square" style="font-size:36px ;color:white"><p style="font-size: 1rem;">LinkedIn</p></i>
+                </a>
+            </div>
+            <div class="reff">
+                <i class="fa fa-envelope" style="font-size:36px"> <p style="font-size: 1rem;">mallika.rai05@gmail.com</p></i>
+            </div>
+        </div>
+        
+    </footer>
 </body>
 </html>
